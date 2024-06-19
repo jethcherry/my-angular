@@ -1,2 +1,11 @@
+<!-- <app-add-people (onAdd)="addNewPerson($event)"></app-add-people>
+<app-display [people]="peoples" (onDelete)="deletePerson($event)"></app-display> -->
 
-<app-home></app-home>
+<p>{{title|uppercase}}</p>
+<p>{{todaysDate | date:"shortDate" }}</p>
+<p>{{todaysDate | date:"fullDate" }}</p>
+<p>{{todaysDate | date:"d-MM-YYYY  hh MM SS" }}</p>
+<p>{{myName|lowercase}}</p>
+ <p>{{money | currency: "KSH  "}}</p>
+ <p>{{percent  | percent }}</p>
+

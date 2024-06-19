@@ -1,1 +1,9 @@
-<p>add-people works!</p>
+<div class="content">
+    <label for="name">Name</label>
+    <input type="text" [(ngModel)]="name">
+
+    <label for="age">Age</label>
+    <input type="number" [(ngModel)]="age">
+
+    <button (click)="add()">Add</button>
+</div>
