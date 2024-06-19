@@ -1,0 +1,17 @@
+.content
+{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+}
+
+.showRed
+{
+    color: red;
+}
+.showGreen
+{
+    
+}
