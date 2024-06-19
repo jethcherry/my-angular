@@ -1,11 +1,20 @@
 <!-- <app-add-people (onAdd)="addNewPerson($event)"></app-add-people>
 <app-display [people]="peoples" (onDelete)="deletePerson($event)"></app-display> -->
 
-<p>{{title|uppercase}}</p>
+<!-- <p>{{title|uppercase}}</p>
 <p>{{todaysDate | date:"shortDate" }}</p>
 <p>{{todaysDate | date:"fullDate" }}</p>
 <p>{{todaysDate | date:"d-MM-YYYY  hh MM SS" }}</p>
 <p>{{myName|lowercase}}</p>
  <p>{{money | currency: "KSH  "}}</p>
  <p>{{percent  | percent }}</p>
+ -->
 
+ <input type="text" [(ngModel)] = "searchTerm">
+ <button (click)="addProduct()">Add Keybord</button>
+ <div *ngFor="let product of products | filter:searchTerm" >
+    <h1>{{product.Name}}</h1>
+    <p>{{product.Description | shortenDescription: 10}}</p>
+    <p>{{product.Price | currency }}</p>
+
+ </div>
